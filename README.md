@@ -1,7 +1,7 @@
 # tiny-logger
 An easy-to-use logger to implement on your app. It implements winston logger.
 
-##Example
+## Example
 ```nodejs
 const logger = require("../logger").getLogger({})
 
