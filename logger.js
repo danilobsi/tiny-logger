@@ -17,9 +17,8 @@ function getLogger(options = {}, otherTransports = []) {
             //timestamp: tsFormat,
             colorize: true
         }
-    transportTypes.push(
-        new winston.transports.Console(options.Console)
-    )
+
+    transportTypes.push(new winston.transports.Console(options.Console))
 
     if (options.MongoDB) {
         if (!options.MongoDB.db)

@@ -7,3 +7,5 @@ node_modules/
 #other files
 custom-implementation.js
 npm-debug.log
+MyLog
+log
