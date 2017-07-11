@@ -1,7 +1,7 @@
 {
-  "name": "tiny-logger",
-  "version": "0.1.0",
-  "description": "Small and simple logger for Node.JS Apps",
+  "name": "w-tiny-logger",
+  "version": "0.0.1",
+  "description": "Small and simple logger for Node.JS Apps. Implementing winston.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -- -R spec **/*.spec.js",
