@@ -21,6 +21,21 @@ describe("Business Logger", function () {
         assert(spy.calledWith('info', testMessage, testMeta));
     })
 
+    it("Should log on a File", function () {
+        var spy = sinon.spy();
+
+        const logger = loggerLib.getLogger({
+            File : {}
+        }, [new spyLogger({ spy: spy })])
+
+        let testMessage = "Teste Info",
+            testMeta = { info: 1 }
+
+        logger.log('info', testMessage, testMeta);
+        // assert(spy.calledOnce);
+        assert(spy.calledWith('info', testMessage, testMeta));
+    })
+
     it("Should log with mongoDB error (db is not defined)", function () {
         var spy = sinon.spy();
 

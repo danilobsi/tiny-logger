@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -- -R spec **/*.spec.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec **/*.spec.js"
   },
   "keywords": [
     "Log",
     "MongoDB",
     "Graylog",
-    "LocalStorage"
+    "File"
   ],
   "author": "Danilo Silva",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "winston-mongodb": "^2.0.10"
   },
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
     "sinon": "^2.3.7",
     "winston-spy": "^0.2.0"
