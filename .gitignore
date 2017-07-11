@@ -1,0 +1,8 @@
+#editor files
+.vscode
+
+# Dependency directories
+node_modules/
+
+#other files
+custom-implementation.js

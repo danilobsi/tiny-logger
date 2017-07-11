@@ -1,0 +1,28 @@
+{
+  "name": "tiny-logger",
+  "version": "0.1.0",
+  "description": "Small and simple logger for Node.JS Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -- -R spec **/*.spec.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Log",
+    "MongoDB",
+    "Graylog",
+    "LocalStorage"
+  ],
+  "author": "Danilo Silva",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^2.3.1",
+    "winston-graylog2": "^0.6.0",
+    "winston-mongodb": "^2.0.10"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.7",
+    "winston-spy": "^0.2.0"
+  }
+}
