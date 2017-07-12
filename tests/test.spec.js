@@ -9,7 +9,7 @@ describe("Business Logger", function () {
     it("Should log", function () {
         var spy = sinon.spy();
 
-        const logger = loggerLib.getBusinessLogger({
+        const logger = loggerLib.getMongoDBLogger({
             db: "mongodb://127.0.0.1"
         }, [new spyLogger({ spy: spy })])
 
@@ -39,7 +39,7 @@ describe("Business Logger", function () {
     it("Should log with mongoDB error (db is not defined)", function () {
         var spy = sinon.spy();
 
-        const logger = loggerLib.getBusinessLogger({}, [new spyLogger({ spy: spy })])
+        const logger = loggerLib.getMongoDBLogger({}, [new spyLogger({ spy: spy })])
 
         let testMessage = "Teste Info",
             testMeta = { info: 1 }
@@ -53,7 +53,7 @@ describe("Business Logger", function () {
     it("Shouldn log with mongoDB error (invalid schema)", function () {
         var spy = sinon.spy();
 
-        const logger = loggerLib.getBusinessLogger({ db: " " }, [new spyLogger({ spy: spy })])
+        const logger = loggerLib.getMongoDBLogger({ db: " " }, [new spyLogger({ spy: spy })])
 
         let testMessage = "Teste Info",
             testMeta = { info: 1 }
@@ -69,7 +69,7 @@ describe("App Logger", function () {
     it("Should log", function () {
         var spy = sinon.spy();
 
-        const logger = loggerLib.getAppLogger({}, [new spyLogger({ spy: spy })])
+        const logger = loggerLib.getGraylogLogger({}, [new spyLogger({ spy: spy })])
 
         let testMessage = "Teste Info",
             testMeta = { info: 1 }

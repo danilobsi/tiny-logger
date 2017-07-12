@@ -1,13 +1,13 @@
 TN:
 SF:C:\git\tiny-logger\logger.js
 FN:9,getLogger
-FN:59,getBusinessLogger
-FN:65,getAppLogger
+FN:59,getMongoDBLogger
+FN:65,getGraylogLogger
 FNF:3
 FNH:3
 FNDA:5,getLogger
-FNDA:3,getBusinessLogger
-FNDA:1,getAppLogger
+FNDA:3,getMongoDBLogger
+FNDA:1,getGraylogLogger
 DA:1,1
 DA:2,1
 DA:3,1

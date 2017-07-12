@@ -56,13 +56,13 @@ function getLogger(options = {}, otherTransports = []) {
     return logger
 }
 
-function getBusinessLogger(mongoDBOptions, otherTransports = []) {
+function getMongoDBLogger(mongoDBOptions, otherTransports = []) {
     return getLogger({
         MongoDB: mongoDBOptions
     }, otherTransports)
 }
 
-function getAppLogger(graylogOptions, otherTransports = []) {
+function getGraylogLogger(graylogOptions, otherTransports = []) {
     return getLogger({
         Graylog: graylogOptions
     }, otherTransports)
@@ -70,6 +70,6 @@ function getAppLogger(graylogOptions, otherTransports = []) {
 
 module.exports = {
     getLogger: getLogger,
-    getAppLogger: getAppLogger,
-    getBusinessLogger: getBusinessLogger
+    getGraylogLogger: getGraylogLogger,
+    getMongoDBLogger: getMongoDBLogger
 }
