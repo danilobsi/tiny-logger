@@ -2,5 +2,5 @@
 examples
 coverage
 .vscode
-**/test
-*/.spec.js
+**/tests
+*/*.spec.js
