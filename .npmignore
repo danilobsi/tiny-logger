@@ -1,0 +1,6 @@
+.travis.yml
+examples
+coverage
+.vscode
+**/test
+*/.spec.js
